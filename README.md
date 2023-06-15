@@ -23,18 +23,18 @@
 * ! ucakBilgileri => Bu metod; koltuk ve ücret bilgisini ekrana yazdırmak için kullanılır.
 
 ## ILokasyon
-public interface ILokasyon
-{
-    void lokasyonOlustur();
-    void lokasyonBilgileri();
-}
++ public interface ILokasyon
++ {
++     void lokasyonOlustur();
++     void lokasyonBilgileri();
++ }
 
 ## IMusteri
-public interface IMusteri
-{
-    void musteriOlustur();
-    void musteriBilgileri();
-}
++ public interface IMusteri
++ {
++     void musteriOlustur();
++     void musteriBilgileri();
++ }
 
 ## IRezervasyon
 public interface IRezervasyon
@@ -43,71 +43,71 @@ public interface IRezervasyon
 }
 
 ## IUcak
-public interface IUcak
-{
-    void ucakBilgileri();
-}
++ public interface IUcak
++ {
++     void ucakBilgileri();
++ }
 
 ## Lokasyon
-public class Lokasyon implements ILokasyon
-{
-    private static ArrayList<String> lokasyonlar = new ArrayList<String>();
-    public static String kalkisLokasyon = "";
-    public static String varisLokasyon = "";
-    public static String Tarih = "";
-    public static String Saat = "";
++ public class Lokasyon implements ILokasyon
++ {
++     private static ArrayList<String> lokasyonlar = new ArrayList<String>();
++     public static String kalkisLokasyon = "";
++     public static String varisLokasyon = "";
++     public static String Tarih = "";
++     public static String Saat = "";
 
-    @Override
-    public void lokasyonOlustur() { }
++     @Override
++     public void lokasyonOlustur() { }
 
-    @Override
-    public void lokasyonBilgileri() { }
-}
++     @Override
++     public void lokasyonBilgileri() { }
++ }
 
 ## Musteri
-public class Musteri implements IMusteri
-{
-    private long TC;
-    private String ad;
-    private String soyad;
-    private long telefon;
-    private int yas;
-    private int engel;
++ public class Musteri implements IMusteri
++ {
++     private long TC;
++     private String ad;
++     private String soyad;
++     private long telefon;
++     private int yas;
++     private int engel;
 
-    @Override
-    public void musteriOlustur() { }
++     @Override
++     public void musteriOlustur() { }
 
-    @Override
-    public void musteriBilgileri() { }
-}
++     @Override
++     public void musteriBilgileri() { }
++ }
 
 ## Program
-public class Program
-{
-    public static void main(String[] args)
-    {
-        System.out.println("Ucak Rezervasyon Sistemi");
++ public class Program
++ {
++     public static void main(String[] args)
++     {
++         System.out.println("Ucak Rezervasyon Sistemi");
 
-        Rezervasyon rezervasyon = new Rezervasyon();
-        rezervasyon.rezervasyonOlustur();
++         Rezervasyon rezervasyon = new Rezervasyon();
++         rezervasyon.rezervasyonOlustur();
 
-        System.out.print("Iyi Ucuslar Dileriz");
-    }
-}
++         System.out.print("Iyi Ucuslar Dileriz");
++     }
++ }
 
 ## Rezervasyon
-public class Rezervasyon implements IRezervasyon
-{
-    @Override
-    public void rezervasyonOlustur() { }
-}
++ public class Rezervasyon implements IRezervasyon
++ {
++     @Override
++     public void rezervasyonOlustur() { }
++ }
 
 ## Ucak
-public class Ucak implements IUcak
-{
-    private int koltukSayisi = 350;
-    private int koltukNo = 0;
++ public class Ucak implements IUcak
++ {
++     private int koltukSayisi = 350;
++     private int koltukNo = 0;
 
-    @Override
-    public void ucakBilgileri() { }
-}
++     @Override
++     public void ucakBilgileri() { }
++ }
